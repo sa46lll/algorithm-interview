@@ -1,4 +1,4 @@
-# 재귀 함수 2
+# 재귀 함수 2 예제
 
 # 반복 n!
 def factorial_interative(n):

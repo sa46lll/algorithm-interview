@@ -1,4 +1,4 @@
-# 큐
+# 큐 예제
 
 # 선입선출: 나중에 온 사람일수록 나중에 들어감(공정한 자료구조라고도 함)
 from collections import deque
