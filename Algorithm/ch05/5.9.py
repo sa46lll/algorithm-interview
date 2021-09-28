@@ -1,3 +1,6 @@
+# 음료수 얼려 먹기
+
+# 얼음 묶음이 몇개 생성되는지.. 
 N, M = map(int, input().split())
 
 graph = []
