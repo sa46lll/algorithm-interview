@@ -1,14 +1,21 @@
-#def solution(participant, completion):
-#    for p in completion:
-#        participant.remove(p)
-#    return participant
+# 완주하지 못한 선수
+
+# sol1)
+def solution(participant, completion):
+    participant.sort()
+    completion.sort()
+    for p,c in zip(participant, completion):
+        if p != c:
+            return p
+    return participant.pop()
+
+
+# sol2)
+import collections
 
 def solution(participant, completion):
-    n=0
-    while True:
-        participant.remove(completion[n])
-        print(completion[n])
-        n += 1
-    return participant[0]
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
 
+# Test
 print(solution(["leo", "kiki", "eden"], ["eden", "kiki"]))
