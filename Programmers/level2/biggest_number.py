@@ -3,7 +3,8 @@
 def solution(numbers):
     numbers = list(map(str, numbers))
     numbers = sorted(numbers, key=lambda x : x*3, reverse=True)
-    return ''.join(numbers)
+    print(numbers*3)
+    return str(int(''.join(numbers)))
 
 # Test
 print(solution([6, 10, 2])) # 6210
