@@ -1,4 +1,4 @@
-# 완주하지 못한 선수
+# 완주하지 못한 선수 (해시)
 
 def solution(participant, completion):
     d = {}
